@@ -1,4 +1,6 @@
 # README
+
+# README
 ##Checks for Understanding
 1. Define CRUD.
 <br> This is an acronym for the main verbs or actions used with apps. It stands for Create, Read, Update, and Delete
@@ -10,3 +12,4 @@
 <br> Params or parameters is what's passed from the requests. So in this example we can use ID as a param if we wanted to view,edit, or delete a specific task. We can also use params in serializers to list out what parameters we want to show in the response.
 1. What is the purpose of a serializer?
 <br>The serializer is used to format the returned JSON to the user. So if the request is for all tasks we can add to the JSON or hide certain key value paris we may not want to show in the response.
+
