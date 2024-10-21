@@ -8,4 +8,14 @@ class TaskSerializer
         }
       end
     end
+
+    def self.format_single_task(task)
+        #binding.pry
+        {
+            id: task.id,
+            title: task.title,
+            description: task.description,
+            note: "Just for one task"
+        }
+    end
   end

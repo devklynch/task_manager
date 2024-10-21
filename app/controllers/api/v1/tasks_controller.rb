@@ -4,7 +4,8 @@ class Api::V1::TasksController < ApplicationController
     end
 
     def show
-        render json: Task.find(params[:id])
+        #render json: Task.find(params[:id])
+        render json: TaskSerializer.format_single_task(Task.find(params[:id]))
     end
 
     def create
@@ -25,11 +26,17 @@ class Api::V1::TasksController < ApplicationController
         render json: TaskSerializer.format_tasks(tasks)
       end
 
+      def show_one
+        render json: Task.find([5])
+    end
+
+
     private
 
     def task_params
         params.require(:task).permit(:title,:description)
     end
+    
 
 
   end
